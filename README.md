@@ -1,5 +1,5 @@
 # Riemann Druid Emitter
-Riemann event emitter for [Druid](https://github.com/druid-io/).
+[Riemann](http://riemann.io) event emitter for [Druid](https://github.com/druid-io/).
 
 ## Installation
 Get source code
