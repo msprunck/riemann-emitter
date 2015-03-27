@@ -4,7 +4,7 @@
 ## Installation
 Get source code
 ```
-git clone git@github.com:druid-io/druid.git
+git clone https://github.com/msprunck/riemann-emitter.git
 ```
 Build the jar file:
 ```
