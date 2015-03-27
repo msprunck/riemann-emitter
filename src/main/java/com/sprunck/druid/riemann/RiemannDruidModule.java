@@ -40,4 +40,15 @@ public class RiemannDruidModule implements DruidModule {
     public Emitter makeEmitter(Supplier<RiemannEmitterConfig> config, ObjectMapper jsonMapper) {
         return new RiemannEmitter(config.get());
     }
+
+    // To avoid multiple injection by Druid (See https://github.com/druid-io/druid/issues/1016)
+    @Override
+    public boolean equals(Object obj) {
+      return getClass().getCanonicalName().equals(getClass().getCanonicalName());
+    }
+
+    @Override
+    public int hashCode() {
+      return getClass().getCanonicalName().hashCode();
+    }
 }
